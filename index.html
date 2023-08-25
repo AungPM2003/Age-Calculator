@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <main>
+        <h2 class="age-title">Welcome From An Age Calculator</h2>
+            
+        <div class="dateInput">
+            <div>
+                <span id="day-title">DAY</span>
+                <input type="text" placeholder="DD" id="dayInput">
+                <span id="day-error" class="day-error"></span>
+            </div>
+            <div>
+                <span id="month-title">MONTH</span>
+                <input type="text" placeholder="MM" id="monthInput">
+                <span id="month-error"></span>
+            </div>
+            <div>
+                <span id="year-title">YEAR</span>
+                <input type="text" placeholder="YYYY" id="yearInput">
+                <span id="year-error"></span>
+            </div>
+            <span id="onlyNumber"></span>
+        </div>
+
+        <div class="inputButton">
+            <div><hr></div>
+            <button id="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+        </div>
+
+        <div class="date-result">
+            <div class="year">
+                <div>
+                    <span id="year-result">--</span>
+                </div>
+                <div>years</div>
+            </div>
+            <div class="month">
+                <div>
+                    <span id="month-result">--</span>
+                </div>
+                <div>months</div>
+            </div>
+            <div class="day">
+                <div>
+                    <span id="day-result">--</span>
+                </div>
+                <div>days</div>
+            </div>
+        </div>
+
+    </main>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root{
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-lightred: hsl(0, 100%, 67%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-Offwhite: hsl(0, 0%, 94%);
+    --neutral-Lightgrey: hsl(0, 0%, 86%);
+    --neutral-Smokeygrey: hsl(0, 1%, 44%);
+    --neutral-Offblack: hsl(0, 0%, 8%);
+
+    --primary-fsInput:32px;
+}
+
+body{
+    background-color:var(--neutral-Lightgrey);
+    min-height:90vh;
+    display:grid;
+    place-items:center;
+}
+
+.age-title{
+    font-family:poppins;
+}
+
+main{
+    background-color:var(--neutral-white);
+    padding: 20px 50px;
+    border-radius:20px 20px 80px 20px ;
+}
+
+/**/
+.dateInput{
+    display:flex;
+    gap:20px;
+    font-family:poppins;
+}
+
+.dateInput div{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.dateInput div span{
+    font-size:12px;
+    color:var(--neutral-Smokeygrey);
+}
+
+.dateInput div input{
+    width:100px;
+    padding:10px;
+    border:1px solid var(--neutral-Lightgrey);
+    border-radius:5px;
+    font-size:var(--primary-fsInput);
+}
+
+/**/
+.inputButton{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    position: relative;
+}
+
+.inputButton div{
+    margin:30px 0;
+}
+
+.inputButton div hr{
+    width:500px;
+}
+
+.inputButton button{
+    width:60px;
+    height:60px;
+    position:absolute;
+    right:0;
+    border:none;
+    border-radius:50%;
+    aspect-ratio:1/1;
+    background-color:var(--primary-purple);
+}
+
+.inputButton button:hover{
+    background-color:var(--neutral-Offblack);
+}
+
+.inputButton svg{
+    width:40px;
+    height:40px;
+    margin-inline:auto ;
+}
+
+/**/
+
+.year,.month,.day{
+    display:flex;
+    font-size:50px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.year span,.month span,.day span{
+    color:var(--primary-purple);
+}
+
+@media (max-width:600px){
+    .age-title{
+        font-size:15px;
+    }
+
+    main{
+        padding:20px;
+    }
+
+    .dateInput div input{
+        width:70px;
+        padding:10px;
+        font-size:calc(var(--primary-fsInput) / 1.5);
+    }
+
+   .inputButton button{
+        width:40px;
+        height:40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   }
+   .inputButton svg{
+        width:25px;
+        height:25px;
+    }
+   .inputButton div hr{
+        width:300px;
+    }
+   .year,.month,.day{
+        font-size:30px; 
+    }
+}
